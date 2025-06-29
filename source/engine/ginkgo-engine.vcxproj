@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BehaviorTree.cpp" />
+    <ClCompile Include="BehaviorTreeSystem.cpp" />
+    <ClCompile Include="Audio.cpp" />
+    <ClCompile Include="collider.cpp" />
+    <ClCompile Include="collider_primitive.cpp" />
+    <ClCompile Include="LeafScriptNode.cpp" />
+    <ClCompile Include="AssetManager.cpp" />
+    <ClCompile Include="BehaviorNode.cpp" />
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="ComponentSerializer.cpp" />
+    <ClCompile Include="consoleMessage.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameObjectFactory.cpp" />
+    <ClCompile Include="consolePanel.cpp" />
+    <ClCompile Include="editor.cpp" />
+    <ClCompile Include="Framebuffer.cpp" />
+    <ClCompile Include="ginkgopch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GlmLuaBindngs.cpp" />
+    <ClCompile Include="imeManager.cpp" />
+    <ClCompile Include="jsonmanager.cpp" />
+    <ClCompile Include="hierarchyPanel.cpp" />
+    <ClCompile Include="imgui\imgui.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ginkgopch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_glfw.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_opengl3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_tables.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="InputSystem.cpp" />
+    <ClCompile Include="inspectorPanel.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="material.cpp" />
+    <ClCompile Include="menuManager.cpp" />
+    <ClCompile Include="menuCreator.cpp" />
+    <ClCompile Include="mesh.cpp" />
+    <ClCompile Include="myphysicsdirector.cpp" />
+    <ClCompile Include="ParticleSystem.cpp" />
+    <ClCompile Include="prim_circle.cpp" />
+    <ClCompile Include="prim_line.cpp" />
+    <ClCompile Include="prim_sphere.cpp" />
+    <ClCompile Include="rendercomponent.cpp" />
+    <ClCompile Include="scene.cpp" />
+    <ClCompile Include="scene2d.cpp" />
+    <ClCompile Include="ScriptComponent.cpp" />
+    <ClCompile Include="ScriptingSystem.cpp" />
+    <ClCompile Include="sceneViewPanel.cpp" />
+    <ClCompile Include="SequencerNode.cpp" />
+    <ClCompile Include="settingsCreator.cpp" />
+    <ClCompile Include="settingsManager.cpp" />
+    <ClCompile Include="shader.cpp" />
+    <ClCompile Include="shape.cpp" />
+    <ClCompile Include="State.cpp" />
+    <ClCompile Include="StateStack.cpp" />
+    <ClCompile Include="toolbar.cpp" />
+    <ClCompile Include="transformcomponent.cpp" />
+    <ClCompile Include="window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Audio.h" />
+    <ClInclude Include="BehaviorNode.h" />
+    <ClInclude Include="BehaviorTree.h" />
+    <ClInclude Include="collider.h" />
+    <ClInclude Include="collider_primitive.h" />
+    <ClInclude Include="scene2d.h" />
+    <ClInclude Include="LeafScriptNode.h" />
+    <ClInclude Include="BehaviorTreeSystem.h" />
+    <ClInclude Include="AssetManager.h" />
+    <ClInclude Include="Blackboard.h" />
+    <ClInclude Include="ComponentSerializer.h" />
+    <ClInclude Include="consoleMessage.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameObjectFactory.h" />
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="consolePanel.h" />
+    <ClInclude Include="editor.h" />
+    <ClInclude Include="Framebuffer.h" />
+    <ClInclude Include="ginkgopch.h" />
+    <ClInclude Include="GlmLuaBindings.h" />
+    <ClInclude Include="imeManager.h" />
+    <ClInclude Include="jsonmanager.h" />
+    <ClInclude Include="hierarchyPanel.h" />
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_impl_glfw.h" />
+    <ClInclude Include="imgui\imgui_impl_opengl3.h" />
+    <ClInclude Include="imgui\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
+    <ClInclude Include="InputSystem.h" />
+    <ClInclude Include="inspectorPanel.h" />
+    <ClInclude Include="material.h" />
+    <ClInclude Include="menuManager.h" />
+    <ClInclude Include="menuCreator.h" />
+    <ClInclude Include="mesh.h" />
+    <ClInclude Include="ParticleSystem.h">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClInclude>
+    <ClInclude Include="myphysicsdirector.h" />
+    <ClInclude Include="prim_circle.h" />
+    <ClInclude Include="prim_line.h" />
+    <ClInclude Include="prim_sphere.h" />
+    <ClInclude Include="RefWrapper.h" />
+    <ClInclude Include="rendercomponent.h" />
+    <ClInclude Include="renderingconstants.h" />
+    <ClInclude Include="scene.h" />
+    <ClInclude Include="ScriptComponent.h" />
+    <ClInclude Include="ScriptingSystem.h" />
+    <ClInclude Include="sceneViewPanel.h" />
+    <ClInclude Include="SequencerNode.h" />
+    <ClInclude Include="settingsCreator.h" />
+    <ClInclude Include="settingsManager.h" />
+    <ClInclude Include="settingsType.h" />
+    <ClInclude Include="shader.h" />
+    <ClInclude Include="shape.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="StateStack.h" />
+    <ClInclude Include="toolbar.h" />
+    <ClInclude Include="transformcomponent.h" />
+    <ClInclude Include="window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ComponentSerializer.inl" />
+    <None Include="menu.json" />
+    <None Include="scripts\collision_event.lua" />
+    <None Include="scripts\event_manager.lua" />
+    <None Include="scripts\firstscene.lua" />
+    <None Include="jsonmanager.inl" />
+    <None Include="scripts\GameState.lua" />
+    <None Include="scripts\Leaf_MoveToTarget.lua" />
+    <None Include="scripts\Leaf_PlaySound.lua" />
+    <None Include="scripts\TitleState.lua" />
+    <None Include="scripts\TriggerSystem.lua" />
+    <None Include="settings_config.json" />
+    <None Include="settings_game.json" />
+    <None Include="shaders\basic.frag" />
+    <None Include="shaders\basic.vert" />
+    <None Include="shaders\brdf.frag" />
+    <None Include="shaders\brdf.vert" />
+    <None Include="shaders\cubemap.frag" />
+    <None Include="shaders\cubemap.vert" />
+    <None Include="shaders\debug.frag" />
+    <None Include="shaders\debug.vert" />
+    <None Include="shaders\deferredbrdf.frag" />
+    <None Include="shaders\deferredbrdf.vert" />
+    <None Include="shaders\deferredskybox.frag" />
+    <None Include="shaders\deferredskybox.vert" />
+    <None Include="shaders\gbuffer.frag" />
+    <None Include="shaders\gbuffer.vert" />
+    <None Include="shaders\particleRender.frag" />
+    <None Include="shaders\particleRender.vert" />
+    <None Include="shaders\particleRenderBasic3D.frag" />
+    <None Include="shaders\particleRenderBasic3D.vert" />
+    <None Include="shaders\psystemupdate.frag" />
+    <None Include="shaders\psystemupdate.vert" />
+    <None Include="shaders\psystemupdate3Ddefault.frag" />
+    <None Include="shaders\psystemupdate3Ddefault.vert" />
+    <None Include="shaders\psystemupdate3DdefaultFlowField.vert" />
+    <None Include="shaders\shadow.frag" />
+    <None Include="shaders\shadow.vert" />
+    <None Include="shaders\shadowdebug.frag" />
+    <None Include="shaders\shadowdebug.vert" />
+    <None Include="shaders\multisample.frag" />
+    <None Include="shaders\multisample.vert" />
+    <None Include="shaders\singlesample.frag" />
+    <None Include="shaders\singlesample.vert" />
+    <None Include="shaders\stencil.frag" />
+    <None Include="shaders\stencil.vert" />
+    <None Include="Start.json" />
+    <None Include="Write.json" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{330872da-1cb6-49e4-ad6e-5859f4ef6e07}</ProjectGuid>
+    <RootNamespace>ginkgoengine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\..\external\glm-1.0.1;$(SolutionDir)\..\..\external\glew-2.1.0\include;$(SolutionDir)\..\..\external\glfw-3.4.bin.WIN64\include;$(SolutionDir)\..\..\external;$(ProjectDir)..\..\external\assimp;%(AdditionalIncludeDirectories);$(ProjectDir)..\..\external\lua_53\include;$(ProjectDir)..\..\external\sol</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\..\external\glm-1.0.1;$(SolutionDir)\..\..\external\glew-2.1.0\include;$(SolutionDir)\..\..\external\glfw-3.4.bin.WIN64\include;$(SolutionDir)\..\..\external;$(ProjectDir)..\..\external\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>imgui;$(SolutionDir)\..\..\external\glm-1.0.1;$(SolutionDir)\..\..\external\glew-2.1.0\include;$(SolutionDir)\..\..\external\glfw-3.4.bin.WIN64\include;$(SolutionDir)\..\..\external\;$(ProjectDir)..\..\external\assimp;$(ProjectDir)..\..\external\lua_53\include;$(ProjectDir)..\..\external\sol</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>imgui;$(SolutionDir)\..\..\external\glm-1.0.1;$(SolutionDir)\..\..\external\glew-2.1.0\include;$(SolutionDir)\..\..\external\glfw-3.4.bin.WIN64\include;$(SolutionDir)\..\..\external\;%(AdditionalIncludeDirectories);$(ProjectDir)..\..\external\assimp;$(ProjectDir)..\..\external\fmod</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalOptions>/D NOMINMAX %(AdditionalOptions)</AdditionalOptions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ginkgopch.h</PrecompiledHeaderFile>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\external\glfw-3.4.bin.WIN64\lib-vc2022;$(SolutionDir)..\..\external\glew-2.1.0\lib\Release\x64;$(SolutionDir)..\..\external;$(ProjectDir)..\..\external\assimp\lib;%(AdditionalLibraryDirectories);$(ProjectDir)..\..\external\lua_53\lib;$(ProjectDir)..\..\external\fmod\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glfw3dll.lib;glew32.lib;glew32s.lib;%(AdditionalDependencies);assimp-vc143-mt.lib;lua53.lib;fmodL_vc.lib;fmodstudioL_vc.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>;$(ProjectDir)..\..\external\assimp;$(ProjectDir)..\..\external\lua_53\include;$(ProjectDir)..\..\external\sol</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>;$(ProjectDir)..\..\external\assimp;$(ProjectDir)..\..\external\rapidjson</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>imgui;$(SolutionDir)\..\..\external\glm-1.0.1;$(SolutionDir)\..\..\external\glew-2.1.0\include;$(SolutionDir)\..\..\external\glfw-3.4.bin.WIN64\include;$(SolutionDir)\..\..\external\;$(ProjectDir)..\..\external\assimp;$(ProjectDir)..\..\external\lua_53\include;$(ProjectDir)..\..\external\sol;($ProjectDir)..\..\external\fmod</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalOptions>/D NOMINMAX %(AdditionalOptions)</AdditionalOptions>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ginkgopch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\external\glfw-3.4.bin.WIN64\lib-vc2022;$(SolutionDir)..\..\external\glew-2.1.0\lib\Release\x64;$(SolutionDir)..\..\external;$(ProjectDir)..\..\external\assimp\lib;%(AdditionalLibraryDirectories);$(ProjectDir)..\..\external\lua_53\lib;$(ProjectDir)..\..\external\fmod\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glfw3dll.lib;glew32.lib;glew32s.lib;%(AdditionalDependencies);assimp-vc143-mt.lib;lua53.lib;fmod_vc.lib;fmodstudio_vc.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

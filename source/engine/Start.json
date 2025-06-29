@@ -1,0 +1,66 @@
+{
+  "GraphicAssets": {
+    "Models": {
+      "wheelchair": "../../content/art/wheelchair.obj"
+    },
+    "SkyBoxTextures": {
+      "skybox": "art/skybox_milkyway"
+    },
+    "Textures": {
+      "diffuse": "art/concrete01-2k/concrete01 diffuse 2k.jpg",
+      "normal": "art/concrete01-2k/concrete01 normal 2k.jpg",
+      "roughness": "art/concrete01-2k/concrete01 roughness 2k.jpg",
+      "plane": "art/kenney prototype pack/PNG/Light/texture_06.png",
+      "cube": "art/kenney prototype pack/PNG/Purple/texture_05.png",
+      "debugTexture": "art/kenney prototype pack/PNG/Green/texture_09.png"
+    }
+  },
+  "AudioAssets": {
+    "Background": "../../content/sound/project1part1&2.aif",
+    "ObjectSoundEffect": {
+      "json object": "../../content/sound/jingles_PIZZI10.ogg"
+    }
+  },
+  "GameObjects": [
+    {
+      "Name": "json object",
+      "Parent": "None",
+      "Transform": {
+        "position": {
+          "x": -6.5,
+          "y": 0.5,
+          "z": -1.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        }
+      },
+      "Render": {
+        "meshType": "CUBE",
+        "material": {
+          "diffuse": {
+            "r": 0.7,
+            "g": 0.1,
+            "b": 0.5
+          },
+          "specular": {
+            "r": 0.5,
+            "g": 0.5,
+            "b": 0.5
+          },
+          "roughness": 5.0
+        }
+      }
+    },
+    {
+
+    }
+  ]
+}

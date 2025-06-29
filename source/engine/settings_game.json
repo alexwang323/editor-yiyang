@@ -1,0 +1,11 @@
+{
+    "settings": {
+        "resolution": 808597809,
+        "master_volume": 0.699999988079071,
+        "mouse_sensitivity": 0.5,
+        "invert_mouse_y": false,
+        "invert_gamepad_y": false,
+        "mute": true,
+        "gamepad_sensitivity": 0.5
+    }
+}

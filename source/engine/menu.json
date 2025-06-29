@@ -1,0 +1,30 @@
+{
+    "main_menu": [
+        {
+            "label": "Start Game",
+            "action": "start_game"
+        },
+        {
+            "label": "Settings",
+            "action": "open_settings"
+        },
+        {
+            "label": "Exit Game",
+            "action": "exit_game"
+        }
+    ],
+    "in_game_menu": [
+        {
+            "label": "Resume Game",
+            "action": "resume_game"
+        },
+        {
+            "label": "Settings",
+            "action": "open_settings"
+        },
+        {
+            "label": "Back to Main Menu",
+            "action": "back_to_main_menu"
+        }
+    ]
+}
